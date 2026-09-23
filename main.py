@@ -109,42 +109,40 @@
 # print(find_middle)
 
 
-find_middle = [1, 2, 3, 7, 6, 7, 8, 6, 8, 9, ]
+# find_middle = [1, 2, 3, 7, 6, 7, 8, 6, 8, 9, ]
 
-sort_first = sorted(find_middle)
+# sort_first = sorted(find_middle)
 
-print(sort_first)
-midlength = len(sort_first)//2
-# print(sort_first[midlength])
-
-
-check = len(find_middle)
-
-# print(check)
-
-mid_num = check//2
-print(mid_num)
+# print(sort_first)
+# midlength = len(sort_first)//2
+# # print(sort_first[midlength])
 
 
-mi = (find_middle[mid_num -1 ] + find_middle[mid_num])/2 
-print(mi)
+# check = len(find_middle)
+
+# # print(check)
+
+# mid_num = check//2
+# print(mid_num)
 
 
+# mi = (find_middle[mid_num -1 ] + find_middle[mid_num])/2 
+# print(mi)
 
 
+# print()
+# print()
 
 
+# tr = [1, 2, 3, 4, 5, 6, 7]
 
 
+# l = len(tr)/2
+# r = len(tr)//2
 
 
-
-
-
-
-
-
-
+# print(l)
+# print(r)
 
 
 
@@ -152,7 +150,20 @@ print(mi)
 
 
 
+def add_tag(profile, tag):
+      updated = profile.copy()
+      updated["tags"] = profile["tags"].copy()
+      updated["tags"].append(tag)
+      return updated
 
+
+original = {"name": "Ada", "tags": ["python"]}
+
+changed = add_tag(original, "testing")
+
+print(original["tags"])
+print(changed is original)
+print(changed["tags"] is original["tags"]) 
 
 
 
